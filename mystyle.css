@@ -9,8 +9,21 @@ body{
 p{
     line-height: 2;
 }
+a{
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+}
 /* utilities */
 
 /* header */
-
+header{
+    background-image: url(img/header.jpg);
+    height: 400px;
+    color: white;
+    text-align: center;
+}
 /* main */
+main{
+    padding: 20px;
+}
