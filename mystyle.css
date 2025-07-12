@@ -48,19 +48,41 @@ img{
     color: white;
     text-align: center;
 }
-
 /* main */
 
 /* houses section */
 .houses-container{
-
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+}
+.house-item-img{
+    width: 100%;
+    
 }
 .house-item{
     background-color: #dedede;
-}
-.house-item-img{
+    border: 1px solid gray;
+    padding: 20px;;
     
 }
 .houses-item-text{
     padding: 20px;
+}
+.price{
+    color: green;
+}
+.house-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.list-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.list-item img{
+    margin-right: 10px;
 }
