@@ -76,6 +76,7 @@ img{
     justify-content: space-evenly;
     margin-bottom: 20px;
 }
+/* lists */
 .list-item{
     display: flex;
     flex-direction: row;
