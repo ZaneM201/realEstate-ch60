@@ -22,31 +22,62 @@
         <div class="contact-container">
             <h2>Contact</h2>
             <h3>Fill in the next information</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos porro voluptatum itaque accusantium cupiditate velit, quidem quos quaerat sint iusto.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore neque voluptatem illum totam earum quaerat cum ducimus debitis commodi! Nostrum voluptatibus excepturi fugit perspiciatis tempora expedita quisquam consectetur, obcaecati nihil.</p>
         </div>
         <form class="contact-form">
             <fieldset class="contact-field-1">
                 <legend>Personal information</legend>
                 <div class="contact-div-1">
                     <label for="name">Name:</label>
-                    <input id="name" type="text" placeholder="John Doe">
+                    <input class="input-1" id="name" type="text" placeholder="John Doe">
                 </div>
                 <div class="contact-div-1">
+                    <label for="email">Email:</label>
+                    <input class="input-1" id="email" type="email" placeholder="johndoe@example.com">
+                </div>
+                <div class="contact-div-1">
+                    <label for="phone-number">Phone Number:</label>
+                    <input class="input-1" id="phone-number" type="number" placeholder="1-234-567-8910">
+                </div>
+                <div class="contact-div-1">
+                    <label for="message">Message:</label>
+                    <textarea id="message"></textarea>
+                </div>
+            </fieldset>
+            <br>   
+            <fieldset class="contact-field-1">
+                <legend>Product information</legend>
+                <div class="contact-div-1">
+                    <label>Type:</label>
+                    <select>
+                        <option value="option 1">Option 1</option>
+                        <option value="option 2">Option 2</option>
+                        <option value="option 3">Option 3</option>
+                        <option value="option 4">Option 4</option>
+                    </select>
+                </div>
+                <div class="contact-div-1">
+                    <label>Number:</label>
+                    <input class="input-1" type="number">
+                </div>
+            </fieldset>
+            <br>
+            <fieldset class="contact-field-2">
+                <legend>Contact Information</legend>
+                <div class="contact-div-2">
                     <label>Email:</label>
-                    <input type="email" placeholder="johndoe@example.com">
+                    <input type="radio" name="legend" value="active">
+                    <label>Phone:</label>
+                    <input type="radio" name="legend" value="inactive">
                 </div>
-                <div class="contact-div-1">
-                    <label>Phone Number:</label>
-                    <input type="number" placeholder="1-234-567-8910">
+                <div class="contact-div-3">
+                    <label>Date:</label>
+                    <input class="input-2" type="date">
+                    <label>Hour:</label>
+                    <input class="input-2" type="time">
                 </div>
-                <div class="contact-div-1">
-                    <label>Message:</label>
-                    <textarea></textarea>
-                </div>
-                
             </fieldset>
         </form>
-
     </main>
     <footer class="contact-footer">
         <div class="footer-div-parent">
@@ -63,7 +94,6 @@
                 <div><i class="fa-brands fa-youtube"></i></div>
             </div>
         </div>
-    </footer>
-    
+    </footer>   
 </body>
 </html>
