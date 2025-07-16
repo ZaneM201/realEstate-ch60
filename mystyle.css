@@ -69,14 +69,13 @@ img{
 .price{
     color: green;
 }
-
+/* lists */
 .house-list{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     margin-bottom: 20px;
 }
-/* lists */
 .list-item{
     display: flex;
     flex-direction: row;
