@@ -26,14 +26,14 @@ b{
 .contact-container{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding-top: 20px;
+    margin: auto;
+    padding: 20px;
     text-align: center;
     line-height: 2;
 }
 .contact-form{
     background-color: #dedede;
-    width: 50%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     margin: 20px auto;
@@ -41,15 +41,6 @@ b{
     border-radius: 5px;
 }
 .contact-field-1{
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 10px;
-    line-height: 1;
-    gap: 20px;  
-}
-.contact-field-2{
     border-radius: 5px;
     display: flex;
     flex-direction: column;
@@ -66,16 +57,18 @@ b{
 .contact-div-2{
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    gap: 75px;
+    justify-content: space-evenly;
     margin-top: 30px;
     margin-bottom: 100px;
+    margin-left: 0px;
+    width: 80%;
 }
 .contact-div-3{
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    gap: 40px;
+    justify-content: space-evenly;
+    margin-left: 0px;
+    width: 80%;
 }
 .input-1{
     width: 70%;
@@ -107,18 +100,18 @@ select{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    padding: 38px;
 }
 .footer-div-c1{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 40px;
 }
 .footer-div-c2{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-top: 40px;
+    gap: 5px;
 }
 .footer-p1{
     font-weight: bold;
@@ -128,6 +121,37 @@ select{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    gap: 40px;
-    margin-top: 40px;
+    gap: 18px;
+}
+.fa-brands{
+    border: 1px solid black;
+    padding: 8px;
+    border-radius: 50%;
+}
+/* Media Queries */
+/* Mobile */
+@media (max-width: 956px){
+    a{
+        padding: 2px;
+    }
+    .contact-header{
+        height: 100px;
+    }
+    .contact-container{
+        line-height: 1;
+        padding: 5px;
+        width: 95%;
+    }
+    .input-1, .input-2, textarea, select{
+        margin-right: 0px;
+    }
+    .contact-div-2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: auto;
+    }
+    .contact-div-3{
+        flex-direction: column;
+    }
 }
