@@ -154,4 +154,7 @@ select{
     .contact-div-3{
         flex-direction: column;
     }
+    footer{
+        font-size: 10px;
+    }
 }

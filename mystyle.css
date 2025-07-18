@@ -137,4 +137,7 @@ img{
     .houses-container{
         flex-direction: column;
     }
+    footer{
+        font-size: 10px;
+    }
 }
