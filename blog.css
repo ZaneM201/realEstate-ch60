@@ -4,43 +4,47 @@
     padding: 0;
 }
 body{
-    background-color: rgb(92, 34, 158);
     font-family: arial;
 }
-/* Header */
-.about-header-container{
-    background-color: black;
-    color: white;
-    display: flex;
-    height: 200px;
-    justify-content: space-between;
-    line-height: 2;
-    padding: 20px;
+p{
+    line-height: 1;
 }
 a{
     color: white;
     text-decoration: none;
-    padding-right: 40px;
+    padding: 20px;
+}
+img{
+    max-width: 100%;
+}
+/* Header */
+.blog-header{
+    background-image: url(img/blog1.jpg);
+    background-size: cover;
+    height: 400px;
+    color: white;
+    text-align: center;
 }
 /* Main */
-.mission{
+.blog-container{
     display: flex;
-    justify-content: space-between; 
+    flex-direction: row;
+    justify-content: space-evenly;
+    width:75%;
+    margin-left: auto;
+    margin-right: auto;
 }
-.mission-img{
-    width: 100%;
-}
-.mission-div{
-    width: auto;
-    line-height: 2;
-    padding: 10px;
-}
-.mission-reverse{
+.blog-container-1{
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 18px;
 }
-
+.blog{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 /* Footer */
 .contact-footer{
     background-color: lightgrey;
@@ -48,7 +52,7 @@ a{
     margin-top: 20px;
 }    
 .footer-div-parent{
-display: flex;
+    display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding: 38px;
@@ -83,23 +87,20 @@ display: flex;
     border-radius: 50%;
 }
 /* Media Queries */
+
 /* Mobile */
 @media (max-width: 956px){
-    .about-header-container{
-        height: 75px;
+    p{
         line-height: 1;
     }
-    h1{
-        padding-bottom: 10px;
+    .blog-header{
+        height: 200px;
     }
-    a{
-        padding-right: 5px;
+    .index-flex{
+        flex-direction: column;
     }
-    .mission, .mission-reverse{
-        flex-direction: column;;
-    }
-    .mission-div{
-        line-height: 1;
+    .blog-container, .blog-container-1{
+        flex-direction: column;
     }
     footer{
         font-size: 10px;
